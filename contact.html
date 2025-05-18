@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    
+  <div class="topnav">
+    <div class="left-nav">
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="right-nav">
+      <a href="index.html">Home</a>
+      <a href="hobbies.html">Hobbies & Interests</a>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><i class="fas fa-user"></i> Jericha Gallardo Escandor</p>
+      <p><i class="fas fa-map-marker-alt"></i> Mansanas st, bilog 
+BLK 5 LOT 10
+Balangkas Valenzuela city
+</p>
+      <p><i class="fas fa-phone"></i>+6393 8204 2974</p>
+      <p><i class="fas fa-envelope"></i> jerichaescandor@gmail.com</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form id="contactForm" onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="successMessage" style="color: green; display: none;">Thank you for your message! We will get back to you shortly.</p>
+    </div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
